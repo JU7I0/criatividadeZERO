@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina do julio">
+    <title>CSS TE ODEIO</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="index.html">
+                <h1 class="title-h1">Criatividade</h1>
+                <hi class="title-h1">ZERO</hi>
+            </a>
+        </div>
+            <ul class="menu">                 
+                <a class="menu-link" href="index.html">HOME</a>
+                <a class="menu-link" href="contato.html">CONTATO</a> 
+                <a class="menu-link menu-link-bt" href="cadastro.html">INSCREVA-SE</a>
+            </ul>
+    </header>
+
+    <main class="main-of">
+        
+        <section>
+            <h2 class="main-title-1" id="main-title"><span>CSS, mil formas de enlouquecer</span></h2>
+            <h2 class="main-title-2" id="main-title">Inscreva-se na nossa Newslatter</h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque reprehenderit nulla libero hic. Praesentium placeat, incidunt reprehenderit quam aliquam impedit ipsa facere autem sed debitis at assumenda doloribus odit.</p>
+            
+            <form>
+                <input class="main-text" type="text" id="nome" onkeyup="validaNome()" placeholder="Nome">
+                <div id="txtNome"></div>
+                <input class="main-text" type="email" id="email" onkeyup="validaEmail()" placeholder="E-mail">
+                <div id="txtEmail"></div>
+                <input type="submit" value="ENVIAR >" onclick="enviar()">
+            </form>
+        </section>
+        
+        <aside>
+            <img class="main-img" src="assets/img/CSS-removebg-preview.png" alt="foto do julio">
+        </aside>
+
+        <script src="assets/js/script.js"></script>
+    </main>
+</body>
+</html>

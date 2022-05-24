@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+.title-h1 {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.menu-link:hover {
+    color: rgb(154, 225, 157);
+    transition: 0.3s all;
+}
+
+.menu-link-bt {
+    border: 3px solid;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+.menu-link-bt:hover {
+    background-color: black;
+}
+
+.main-of {
+    display: flex;
+    flex-direction: row;
+    margin: 90px 35px 0px 35px;
+    justify-content: space-around;
+}
+
+#main-title {
+    line-height: 60px;
+}
+
+.main-title-1 {
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(83, 122, 90);
+}
+
+.main-title-2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+p {
+    width: 500px;
+}
+
+.main-img {
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(154, 225, 157);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    color: black;
+    background-color: rgb(83, 122, 90);
+    border: 1px black solid;
+    transition: 0.3s;
+}
+
+.main-text {
+    padding: 6px;
+    ;
+}
+
+.contact-title {
+    font-size: xx-large;
+    font-weight: 600;
+    color: rgb(83, 122, 90);
+}
+
+.contact-text {
+    width: 400px;
+    height: 30px;
+    padding: 6px;
+}
+
+.contact-animation {
+    width: 500px;
+    height: 300px;
+}
+
+#assunto {
+    width: 500px;
+    padding: 6px;
+}
+
+#handboy {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+
+}
+
+
+#girllight {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+
+}
+
+#zero {
+    transform-origin: bottom;
+    transform-box: fill-box;
+
+}
+
+/*************swing************/
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+
+/*************swing hair************/
+@keyframes swinghair {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(-6deg);
+    }
+}
